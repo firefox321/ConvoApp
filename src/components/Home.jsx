@@ -56,16 +56,18 @@ function Home() {
   };
   return (
     <>
+
       <div className="max-w-screen-2xl mx-auto container px-6 py-3 md:px-40">
         <div className="flex h-screen items-center justify-center">
-          <div className="border-2 border-dashed px-4 py-2 md:px-8 md:py-6 border-indigo-400 rounded-lg shadow-lg">
-            <h1 className="text-3xl font-bold text-center mb-4">
+          <div className="border-2 border-dashed px-4 py-2 md:px-8 md:py-6 border-white-100 rounded-lg shadow-lg">
+            <h1 className="text-3xl font-bold text-center mb-4 hover:tracking-wide 2xl duration-500">
               Convert Word to PDF Online
             </h1>
             <p className="text-sm text-center mb-5">
               Easily convert Word documents to PDF format online, without having
               to install any software.
             </p>
+           
 
             <div className="flex flex-col items-center space-y-4">
               <input
@@ -77,7 +79,7 @@ function Home() {
               />
               <label
                 htmlFor="FileInput"
-                className="w-full flex items-center justify-center px-4 py-6 bg-gray-100 text-gray-700 rounded-lg shadow-lg cursor-pointer border-blue-300 hover:bg-blue-700 duration-300 hover:text-white"
+                className="w-full flex items-center justify-center px-3 py-6 bg-gray-100 text-gray-700 rounded-lg shadow-lg cursor-pointer hover:bg-purple-500 border-blue-300 duration-500 text hover:text-white hover:tracking-wide 2xl  "
               >
                 <FaFileWord className="text-3xl mr-3" />
                 <span className="text-2xl mr-2 ">
@@ -87,7 +89,7 @@ function Home() {
               <button
                 onClick={handleSubmit}
                 disabled={!selectedFile}
-                className="text-white bg-blue-500 hover:bg-blue-700 disabled:bg-gray-400 disabled:pointer-events-none duration-300 font-bold px-4 py-2 rounded-lg"
+                className="text-white hover:tracking-wide 2xl bg-gray-400 hover:bg-purple-600 disabled:bg-gray-400 disabled:pointer-events-none duration-500 font-bold px-4 hover:px-7 py-2 rounded-lg hover:bg-gradient-to-t "
               >
                 Convert File
               </button>
@@ -101,6 +103,7 @@ function Home() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

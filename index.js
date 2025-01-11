@@ -51,6 +51,9 @@ app.post("/convertFile", upload.single("file"), (req, res, next) => {
         });
     }
 });
+app.get("/", (req, res) => {
+    res.send("Welcome to the DOCX to PDF converter API. Use POST /convertFile to upload a file.");
+});
 
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
